@@ -13,6 +13,7 @@ phases:
     commands:
       - echo Entering build phase...
       - echo Build started on `date`
+      - chmod 755 ./gradlew
       - ./gradlew build
   post_build:
     commands:
